@@ -1,0 +1,12 @@
+run:
+linters:
+  disable-all: true
+  enable:
+    - gocritic
+linters-settings:
+  gocritic:
+    enabled-checks:
+      - ruleguard
+    settings:
+      ruleguard:
+        rules: "ruleguard_rules.go"
